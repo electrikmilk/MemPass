@@ -25,6 +25,7 @@ $word_len = strlen($word);
 $rand_letter1 = rand(0, $word_len);
 $rand_letter2 = rand(0, $word_len);
 $i = 0;
+$final_word = '';
 foreach (str_split($word) as $letter) {
 	if ($i === $rand_letter1 || $i === $rand_letter2) {
 		$final_word .= strtoupper($letter);
